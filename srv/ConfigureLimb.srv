@@ -1,0 +1,5 @@
+string[] limbs
+int16[] type
+geometry_msgs/Transform[] origin
+---
+bool success

@@ -1,0 +1,5 @@
+CoordinatedTrajectoryGoal goal
+---
+TrajectoryComplete result
+---
+TrajectoryProgress progress

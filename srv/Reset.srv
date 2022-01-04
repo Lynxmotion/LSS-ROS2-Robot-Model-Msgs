@@ -1,0 +1,6 @@
+bool target_state
+bool trajectories
+bool limp
+---
+bool success
+

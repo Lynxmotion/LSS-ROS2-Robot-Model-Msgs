@@ -1,0 +1,6 @@
+string[] limbs
+int16[] mode
+bool[] supportive
+float32[] compliance
+---
+bool success
