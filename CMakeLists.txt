@@ -39,6 +39,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
         "srv/Reset.srv"
         "action/EffectorTrajectory.action"
         "action/CoordinatedEffectorTrajectory.action"
+        "action/LinearEffectorTrajectory.action"
         DEPENDENCIES builtin_interfaces std_msgs geometry_msgs
         )
 
