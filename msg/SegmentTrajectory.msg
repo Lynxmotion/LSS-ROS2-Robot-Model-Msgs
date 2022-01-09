@@ -42,6 +42,9 @@ int8 mix_mode
 float64 velocity
 float64 acceleration
 
+# set to true if this is a limb and its expected to support the robot
+bool supporting
+
 # the desired motion profile
 # currently supported are:
 #   velocity/trap
