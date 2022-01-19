@@ -104,6 +104,11 @@ string reference_frame
 # from within the relative_frame
 int8 coordinate_mode
 
+# specify what components of the coordinate should be applied (defaults to all if blank)
+# use strings with characters like "xyz:rpy" (all components):
+#    "xyz:y"   - apply all position components and yaw
+string coordinate_mask
+
 # trajectory points
 # can be direct trajectory transforms but also used as input to the path
 # function so may be transformed before execution

@@ -23,6 +23,17 @@ int8 mode_out
 # list of effectors to twist
 string[] effectors
 
+# how to apply coordinates to the effector
+# lists what components of the effector frame or twist should be updated
+# allowing a trajectory to only affect some parts of the target position
+# or velocity such as X, XY, XYZ for translational and RPY for the
+# rotational. Seperate translational and rotational components with a colon.
+# The default value is an empty string, so all components are applied.
+# ex:
+#   "XY"       - only apply X and Y values of translational
+#   "XY:Y"   - apply XY translational values, and Yaw rotation
+#string components
+
 # segment continuous twist trajectories
 geometry_msgs/Twist[] velocity
 ---
