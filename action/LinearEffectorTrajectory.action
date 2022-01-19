@@ -1,5 +1,12 @@
 std_msgs/Header header
 
+# effector modes
+int8 UNCHANGED = 0
+int8 LIMP = 1
+int8 HOLD = 2
+int8 SUPPORT = 3
+int8 AUTO_SUPPORT = 4
+
 # trajectory ID
 string id
 
@@ -7,8 +14,11 @@ string id
 float32 linear_acceleration
 float32 angular_acceleration
 
-# set to true if this is a limb and its expected to support the robot
-bool supporting
+# mode when executing the trajectory
+int8 mode_in
+
+# mode after trajectory is complete
+int8 mode_out
 
 # list of effectors to twist
 string[] effectors

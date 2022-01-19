@@ -7,6 +7,13 @@ int8 MERGE = 2
 int8 ABSOLUTE = 0
 int8 RELATIVE = 1
 
+# effector modes
+int8 UNCHANGED = 0
+int8 LIMP = 1
+int8 HOLD = 2
+int8 SUPPORT = 3
+int8 AUTO_SUPPORT = 4
+
 # when the trajectory should begin execution
 # anything less than now begins immediately
 builtin_interfaces/Time start
@@ -42,8 +49,11 @@ int8 mix_mode
 float64 velocity
 float64 acceleration
 
-# set to true if this is a limb and its expected to support the robot
-bool supporting
+# mode when executing the trajectory
+int8 mode_in
+
+# mode after trajectory is complete
+int8 mode_out
 
 # the desired motion profile
 # currently supported are:
